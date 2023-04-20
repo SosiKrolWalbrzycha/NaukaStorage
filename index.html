@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </div>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Test Storage Przeglądarki</h1>
+
+
+    <div class="box-outside">
+        <div class="box-inside">
+            <h2>Tutaj dodajesz wpisy do Storage:</h2>
+            <input type="text" id="key-input" placeholder="Wpisz klucz">
+            <input type="text" class="box" id="text-input" placeholder="Wpisz tekst do zapamiętania">
+            <div class="buttons">
+                <button class="button localupload">Załaduj LocalStorage</button>
+                <button class="button sessionupload">Załaduj SessionStorage</button>
+            </div>
+        </div>
+        <div class="box-inside">
+            <h2>Tutaj wczytujesz i kasujesz Storage:</h2>
+
+            <div class="checkboxes">
+                <p>LocalStorage</p><input type="range" name="points" class="range" min="1" max="2">
+                <p>SessionStorage</p>
+            </div>
+            <select name="choose" id="key-output" placeholder="zzzzz">
+
+            </select>
+            <div class="box1" id="text-output" aria-placeholder="Póki co nic nie pobraliśmy">
+            </div>
+            <div class="buttons">
+                <button class="button localdownload">Pobierz wybrany Storage</button>
+                <button class="button storageDelete">Usuń wybrany Storage</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
